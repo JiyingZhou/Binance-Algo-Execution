@@ -37,13 +37,12 @@ pip install python-binance pandas numpy python-dotenv urllib3
 
 **2. Secure Environment Setup (CRITICAL)**
 For absolute fund security, **never hardcode your API keys in the scripts.**
-Create a file exactly named `.env` in the root directory of this project and fill in your Binance credentials:
+Open a file named `Binance_API_KEY&SECRET.env` in the root directory of this project and fill in your Binance credentials:
 ```ini
 # .env file content
 BINANCE_API_KEY=your_actual_binance_api_key_here_at_least_50_chars
 BINANCE_API_SECRET=your_actual_binance_api_secret_here_at_least_50_chars
 ```
-Make sure `.env` is listed in your `.gitignore` file before committing to GitHub.
 
 ### 💻 Usage Guide & Configuration
 
@@ -116,14 +115,12 @@ pip install python-binance pandas numpy python-dotenv urllib3
 
 **2. 配置安全密钥（非常重要）**
 为了绝对的资金安全，**切勿在代码中明文写入密钥**。
-请在项目根目录下新建一个名为 `.env` 的文件，并填入你从币安获取的真实密钥：
+请在项目根目录下的 `Binance_API_KEY&SECRET.env` 填入你从币安获取的真实密钥：
 ```ini
 # .env 文件内容
 BINANCE_API_KEY=你的真实币安API_KEY（长度通常大于50位）
 BINANCE_API_SECRET=你的真实币安API_SECRET（长度通常大于50位）
 ```
-在提交到 GitHub 之前，请务必检查 `.gitignore` 文件，确保 `.env` 已经被忽略，防止密钥泄露！
-
 ### 💻 使用指南与参数配置
 
 本项目的每个模块都可以独立运行。在执行前，请使用编辑器打开对应的 `.py` 文件，根据需求修改代码顶部的**全局配置参数**。
