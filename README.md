@@ -55,7 +55,7 @@ This is the main entry point for automated trading. It calls `execution_engine.p
   * `RUN_ONCE = False` (Set to True if you only want it to run one time without looping).
 * **Command:**
 ```bash
-python task_scheduler.py
+python 定时交易.py
 ```
 
 **B. Configure the Execution Engine (`execution_engine.py`)**
@@ -73,7 +73,7 @@ Downloads massive amounts of minute-level candlesticks into a clean, deduplicate
   * `SYMBOL = "BNBUSDT"` (Target pair for the data).
 * **Command:**
 ```bash
-python market_data_fetcher.py
+python 市场数据查询.py
 ```
 
 **D. Check Real-Time Portfolio (`portfolio_manager.py`)**
@@ -82,7 +82,7 @@ Outputs a beautifully formatted terminal dashboard showing your spot assets, fro
   * `PRIORITY_ASSETS = ["USDT", "BTC", "ETH", "BNB"]` (Assets to pin at the top of the table).
 * **Command:**
 ```bash
-python portfolio_manager.py
+python 查询资产.py
 ```
 
 ---
@@ -132,7 +132,7 @@ BINANCE_API_SECRET=你的真实币安API_SECRET（长度通常大于50位）
   * `RUN_ONCE = False`（如果只想运行一次不循环，将其改为 True）。
 * **运行命令：**
 ```bash
-python task_scheduler.py
+python 定时交易.py
 ```
 
 **B. 配置核心交易引擎 (`execution_engine.py`)**
@@ -150,7 +150,7 @@ python task_scheduler.py
   * `SYMBOL = "BNBUSDT"`（你要拉取数据的交易对）。
 * **运行命令：**
 ```bash
-python market_data_fetcher.py
+python 市场数据查询.py
 ```
 
 **D. 唤出资产盘点看板 (`portfolio_manager.py`)**
@@ -159,5 +159,5 @@ python market_data_fetcher.py
   * `PRIORITY_ASSETS = ["USDT", "BTC", "ETH", "BNB"]`（将你最关心的资产名称放在这里，打印时会自动置顶）。
 * **运行命令：**
 ```bash
-python portfolio_manager.py
+python 查询资产.py
 ```
