@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 # 加载项目根目录下的.env文件（路径根据实际情况调整）
 load_dotenv()  # 默认读取当前工作目录的.env文件
 
-
 # 忽略不安全请求警告
 warnings.filterwarnings("ignore", category=InsecureRequestWarning)
 
